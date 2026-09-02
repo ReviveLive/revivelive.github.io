@@ -1,0 +1,69 @@
+site_name: Revive Live
+site_description: Revive Live Development Documentation Homepage
+site_author: Revive Live
+site_url: https://revivelive.github.io/
+
+theme:
+  name: material
+  palette:
+    # Palette toggle for dark mode
+    - scheme: slate
+      primary: 'green'
+      accent: 'green'
+      toggle:
+        icon: material/weather-sunny
+        name: Switch to light mode
+
+    # Palette toggle for light mode
+    - scheme: default
+      primary: 'green'
+      accent: 'green'
+      toggle:
+        icon: material/weather-night
+        name: Switch to dark mode
+
+  favicon: images/logo.png
+  icon:
+    admonition:
+      note: material/alpha-j
+      success: material/alpha-j
+      warning: material/alpha-j
+      danger: material/alpha-j
+  logo: images/logo.png
+        
+  features:
+    - navigation.tabs
+    - navigation.instant
+    - navigation.tabs.sticky
+    - navigation.sections
+    - toc.follow
+    - navigation.footer
+    - navigation.instant.preview
+    - navigation.tracking
+    - navigation.path
+    - navigation.top
+    - content.code.copy
+
+    
+nav:
+  - Home:
+    - Overview: 
+      - Overview: index.md
+      - Warrior Simulator: https://revivelive.github.io/WarriorSimulator/
+    - Revive Group ⇗: https://rei-limited.com/
+    - Warrior ⇗: https://rei-limited.com/products/warrior
+  - Warrior Simulator: https://revivelive.github.io/WarriorSimulator/
+    
+extra:
+  social:
+    - icon: fontawesome/brands/linkedin
+      link: https://ie.linkedin.com/company/revive-environmental
+    - icon: fontawesome/brands/github
+      link: https://github.com/ReviveLive
+
+markdown_extensions:
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences
+  - pymdownx.tasklist:
+      custom_checkbox: true
